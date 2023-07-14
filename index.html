@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="estilo/style.css">
+    <script>
+        function mostrarImagem(imagem) {
+            var imagens = document.getElementsByClassName("imagem");
+            for (var i = 0; i < imagens.length; i++) {
+                imagens[i].style.display = "none";
+            }
+            document.getElementById(imagem).style.display = "block";
+        }
+    </script>
+</head>
+<body>
+    <h1 class="titulo">
+        Ola, eu sou Lucas Engineer
+    </h1>
+    <div style="font-size: 20px;">
+        <p style="color: cyan">
+            Veja alguns desenhos meus:
+            <ul style="color: #00ff00">
+                <li><a href="#" onclick="mostrarImagem('imagem1')">Desenho 1</a></li>
+                <li><a href="#" onclick="mostrarImagem('imagem2')">Desenho 2</a></li>
+                <li><a href="#" onclick="mostrarImagem('imagem3')">Desenho 3</a></li>
+            </ul>
+        </p>
+    </div>
+    <img id="imagem1" class="imagem" src="img/01.png">
+    <img id="imagem2" class="imagem" src="img/02.png">
+    <img id="imagem3" class="imagem" src="img/03.png">
+    <footer>
+        <p class="final" style="color: darkgreen;"> Qualquer dúvida, entre em contato comigo pelo Instagram: 
+            <a href="https://www.instagram.com/lucas.bf_gts/" style="color: chartreuse;">
+            Clique aqui.
+            </a>
+        </p>
+    </footer>
+</body>
+</html>
